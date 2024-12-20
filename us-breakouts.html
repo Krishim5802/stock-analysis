@@ -125,7 +125,7 @@
         const closeModal = document.getElementById('close-modal');
 
         // Base GitHub URL
-        const baseGitHubURL = "https://raw.githubusercontent.com/Hemangini08/Images/main/";
+        const baseGitHubURL = "https://raw.githubusercontent.com/Hemangini08/Images/main/US-Markets/Breakouts/";
 
         // Images for each folder
         const imagesByFolder = {
@@ -165,7 +165,7 @@
 
         function getDates() {
             const dates = [];
-            for (let i = 0; i < 4; i++) {
+            for (let i = 0; i < 5; i++) {
                 const date = new Date();
                 date.setDate(date.getDate() - i);
                 dates.push(date.toISOString().split('T')[0]);
