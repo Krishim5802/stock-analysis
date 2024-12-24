@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        h1.stock-table {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            top: 60%;
+            width: 100%;
+            left: 50%;
+            align-items: center;
+            margin-left: 35%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li>
+              <a href="#">US Markets</a>
+              <ul class="dropdown">
+                <li><a href="us-breakouts.html">Breakouts</a></li>
+                <li><a href="us-patterns.html">Patterns</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Indian Markets</a>
+              <ul class="dropdown">
+                <li><a href="indian-breakouts.html">Breakouts</a></li>
+                <li><a href="indian-patterns.html">Patterns</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Commodities</a>
+              <ul class="dropdown">
+                <li><a href="commodities-breakouts.html">Breakouts</a></li>
+                <li><a href="commodities-patterns.html">Patterns</a></li>
+              </ul>
+            </li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Prediction.html">Prediction</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h1 class="stock-table">Stock Analysis Table</h1>
+    <!-- <input type="file" id="csvFileInput" accept=".csv"> -->
+    <table id="csvTable"></table>
+    <script src="script.js"></script>
+</body>
+</html>
