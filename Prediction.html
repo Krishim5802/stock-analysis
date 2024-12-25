@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         table {
-            width: 100%;
+           width: 50%;
             border-collapse: collapse;
+            margin: 20px 0;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 25%;
         }
         table, th, td {
             border: 1px solid black;
@@ -16,6 +20,9 @@
         th, td {
             padding: 10px;
             text-align: center;
+        }
+        td:first-child {
+        text-align: left; /* Aligns the first column (Company Name) to the left */
         }
         th {
             background-color: #f4f4f4;
@@ -27,7 +34,7 @@
             width: 100%;
             left: 50%;
             align-items: center;
-            margin-left: 35%;
+            margin-left: 33%;
         }
     </style>
 </head>
@@ -64,7 +71,7 @@
           </ul>
         </nav>
       </header>
-    <h1 class="stock-table">Stock Analysis Table</h1>
+    <h1 class="stock-table">Prediction for 24-Dec-2024</h1>
     <!-- <input type="file" id="csvFileInput" accept=".csv"> -->
     <table id="csvTable"></table>
     <script src="script.js"></script>
