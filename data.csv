@@ -1,70 +1,70 @@
-Date,Company Name,Symbol,Prediction
-24-12-2024,Adani Enterprises Ltd.,ADANIENT,UP
-24-12-2024,Adani Ports and Special Economic Zone Ltd.,ADANIPORTS,UP
-24-12-2024,APL Apollo Tubes Ltd.,APLAPOLLO,Down
-24-12-2024,Ashok Leyland Ltd.,ASHOKLEY,UP
-24-12-2024,Axis Bank Ltd.,AXISBANK,Down
-24-12-2024,Bajaj Auto Ltd.,BAJAJ-AUTO,Down
-24-12-2024,Bajaj Finance Ltd,BAJAJFINSV,Down
-24-12-2024,Bank of Baroda,BANKBARODA,Down
-24-12-2024,Bharat Forge Ltd.,BHARATFORG,UP
-24-12-2024,Bharti Airtel Ltd.,BHARTIARTL,UP
-24-12-2024,Britannia Industries Ltd.,BRITANNIA,Down
-24-12-2024,Canara Bank,CANBK,Down
-24-12-2024,Coforge Ltd.,COFORGE,Down
-24-12-2024,Colgate Palmolive (India) Ltd.,COLPAL,UP
-24-12-2024,Eicher Motors Ltd.,EICHERMOT,Down
-24-12-2024,Federal Bank Ltd.,FEDERALBNK,Down
-24-12-2024,Godrej Consumer Products Ltd.,GODREJPROP,Down
-24-12-2024,Grasim Industries Ltd.,GRASIM,Down
-24-12-2024,HCL Technologies Ltd.,HCLTECH,UP
-24-12-2024,HDFC Bank Ltd.,HDFCBANK,UP
-24-12-2024,Hero MotoCorp Ltd.,HEROMOTOCO,UP
-24-12-2024,Hindalco Industries Ltd.,HINDALCO,Down
-24-12-2024,Hindustan Unilever Ltd.,HINDUNILVR,Down
-24-12-2024,ICICI Bank Ltd.,ICICIBANK,Down
-24-12-2024,IDFC First Bank Ltd.,IDFCFIRSTB,Down
-24-12-2024,IndusInd Bank Ltd.,INDBANK,Down
-24-12-2024,InterGlobe Aviation Ltd.,INDIGO,UP
-24-12-2024,Infosys Ltd.,INFY,UP
-24-12-2024,ITC Ltd.,ITC,UP
-24-12-2024,Jindal Steel & Power Ltd.,JINDALSTEL,Down
-24-12-2024,Jindal Stainless Ltd.,JSL,Down
-24-12-2024,JSW Steel Ltd.,JSWSTEEL,Down
-24-12-2024,Kotak Mahindra Bank Ltd.,KOTAKBANK,Down
-24-12-2024,Larsen & Toubro Ltd.,LT,UP
-24-12-2024,LTIMindtree Ltd.,LTIM,UP
-24-12-2024,L&T Technology Services Ltd.,LTTS,UP
-24-12-2024,Mahindra & Mahindra Ltd.,M&M,UP
-24-12-2024,Marico Ltd.,MARICO,UP
-24-12-2024,Maruti Suzuki India Ltd.,MARUTI,Down
-24-12-2024,Samvardhana Motherson International Ltd.,MOTHERSON,UP
-24-12-2024,MphasiS Ltd.,MPHASIS,Down
-24-12-2024,National Aluminium Co. Ltd.,NATIONALUM,UP
-24-12-2024,Nestle India Ltd.,NESTLEIND,UP
-24-12-2024,NMDC Ltd.,NMDC,UP
-24-12-2024,Oil & Natural Gas Corporation Ltd.,ONGC,Down
-24-12-2024,Persistent Systems Ltd.,PERSISTENT,UP
-24-12-2024,Power Grid Corporation of India Ltd.,POWERGRID,Down
-24-12-2024,Reliance Industries Ltd.,RELIANCE,Down
-24-12-2024,State Bank of India,SBIN,UP
-24-12-2024,Tata Consumer Products Ltd.,TATACONSUM,UP
-24-12-2024,Tata Motors Ltd.,TATAMOTORS,UP
-24-12-2024,Tata Steel Ltd.,TATASTEEL,Down
-24-12-2024,Tata Consultancy Services Ltd.,TCS,UP
-24-12-2024,Tech Mahindra Ltd.,TECHM,UP
-24-12-2024,TVS Motor Company Ltd.,TVSMOTOR,UP
-24-12-2024,UltraTech Cement Ltd.,ULTRACEMCO,Down
-24-12-2024,Varun Beverages Ltd.,VBL,Down
-24-12-2024,Vedanta Ltd.,VEDL,Down
-24-12-2024,Wipro Ltd.,WIPRO,Down
-24-12-2024,NIFTY METAL,NIFTY METAL,Down
-24-12-2024,NIFTY FIN SERVICE,NIFTY FIN SERVICE,Down
-24-12-2024,NIFTY AUTO,NIFTY AUTO,UP
-24-12-2024,NIFTY FMCG,NIFTY FMCG,UP
-24-12-2024,NIFTY IT,NIFTY IT,UP
-24-12-2024,NIFTY BANK,NIFTY BANK,UP
-24-12-2024,NIFTY PSU BANK,NIFTY PSU BANK,UP
-24-12-2024,NIFTY INFRA,NIFTY INFRA,UP
+Company Name,Symbol,Prediction
+Adani Enterprises Ltd.,ADANIENT,UP
+Adani Ports and Special Economic Zone Ltd.,ADANIPORTS,UP
+APL Apollo Tubes Ltd.,APLAPOLLO,Down
+Ashok Leyland Ltd.,ASHOKLEY,UP
+Axis Bank Ltd.,AXISBANK,Down
+Bajaj Auto Ltd.,BAJAJ-AUTO,Down
+Bajaj Finance Ltd,BAJAJFINSV,Down
+Bank of Baroda,BANKBARODA,Down
+Bharat Forge Ltd.,BHARATFORG,UP
+Bharti Airtel Ltd.,BHARTIARTL,UP
+Britannia Industries Ltd.,BRITANNIA,Down
+Canara Bank,CANBK,Down
+Coforge Ltd.,COFORGE,Down
+Colgate Palmolive (India) Ltd.,COLPAL,UP
+Eicher Motors Ltd.,EICHERMOT,Down
+Federal Bank Ltd.,FEDERALBNK,Down
+Godrej Consumer Products Ltd.,GODREJPROP,Down
+Grasim Industries Ltd.,GRASIM,Down
+HCL Technologies Ltd.,HCLTECH,UP
+HDFC Bank Ltd.,HDFCBANK,UP
+Hero MotoCorp Ltd.,HEROMOTOCO,UP
+Hindalco Industries Ltd.,HINDALCO,Down
+Hindustan Unilever Ltd.,HINDUNILVR,Down
+ICICI Bank Ltd.,ICICIBANK,Down
+IDFC First Bank Ltd.,IDFCFIRSTB,Down
+IndusInd Bank Ltd.,INDBANK,Down
+InterGlobe Aviation Ltd.,INDIGO,UP
+Infosys Ltd.,INFY,UP
+ITC Ltd.,ITC,UP
+Jindal Steel & Power Ltd.,JINDALSTEL,Down
+Jindal Stainless Ltd.,JSL,Down
+JSW Steel Ltd.,JSWSTEEL,Down
+Kotak Mahindra Bank Ltd.,KOTAKBANK,Down
+Larsen & Toubro Ltd.,LT,UP
+LTIMindtree Ltd.,LTIM,UP
+L&T Technology Services Ltd.,LTTS,UP
+Mahindra & Mahindra Ltd.,M&M,UP
+Marico Ltd.,MARICO,UP
+Maruti Suzuki India Ltd.,MARUTI,Down
+Samvardhana Motherson International Ltd.,MOTHERSON,UP
+MphasiS Ltd.,MPHASIS,Down
+National Aluminium Co. Ltd.,NATIONALUM,UP
+Nestle India Ltd.,NESTLEIND,UP
+NMDC Ltd.,NMDC,UP
+Oil & Natural Gas Corporation Ltd.,ONGC,Down
+Persistent Systems Ltd.,PERSISTENT,UP
+Power Grid Corporation of India Ltd.,POWERGRID,Down
+Reliance Industries Ltd.,RELIANCE,Down
+State Bank of India,SBIN,UP
+Tata Consumer Products Ltd.,TATACONSUM,UP
+Tata Motors Ltd.,TATAMOTORS,UP
+Tata Steel Ltd.,TATASTEEL,Down
+Tata Consultancy Services Ltd.,TCS,UP
+Tech Mahindra Ltd.,TECHM,UP
+TVS Motor Company Ltd.,TVSMOTOR,UP
+UltraTech Cement Ltd.,ULTRACEMCO,Down
+Varun Beverages Ltd.,VBL,Down
+Vedanta Ltd.,VEDL,Down
+Wipro Ltd.,WIPRO,Down
+NIFTY METAL,NIFTY METAL,Down
+NIFTY FIN SERVICE,NIFTY FIN SERVICE,Down
+NIFTY AUTO,NIFTY AUTO,UP
+NIFTY FMCG,NIFTY FMCG,UP
+NIFTY IT,NIFTY IT,UP
+NIFTY BANK,NIFTY BANK,UP
+NIFTY PSU BANK,NIFTY PSU BANK,UP
+NIFTY INFRA,NIFTY INFRA,UP
 
 
