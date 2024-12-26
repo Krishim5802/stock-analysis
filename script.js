@@ -35,7 +35,7 @@
 
 
 // URL of the CSV file (place your file URL here)
-const csvFileUrl = 'data.csv'; // Replace with your hosted CSV file path or URL
+const csvFileUrl = 'data26.csv'; // Replace with your hosted CSV file path or URL
 
 // Fetch the CSV file and render the table
 fetch(csvFileUrl)
