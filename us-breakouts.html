@@ -264,9 +264,9 @@
             const option = document.createElement('option');
             option.value = date;
             option.textContent = date;
-            if (index === 0) {
-              option.selected = true; // Set the current date as selected
-            }
+            // if (index === 0) {
+            //   option.selected = true; // Set the current date as selected
+            // }
             folderSelector.appendChild(option);
         });
 
@@ -333,7 +333,7 @@
         });
 
         // Load images for the initial folder
-        loadImages(dates[0]);
+        loadImages(folderSelector.value);
     </script>
 
     <footer>
