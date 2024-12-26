@@ -264,9 +264,9 @@
             const option = document.createElement('option');
             option.value = date;
             option.textContent = date;
-            // if (index === 0) {
-            //     option.selected = true; // Set the current date as selected
-            // }
+            if (index === 0) {
+              option.selected = true; // Set the current date as selected
+            }
             folderSelector.appendChild(option);
         });
 
