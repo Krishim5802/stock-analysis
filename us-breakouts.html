@@ -233,6 +233,16 @@
                 "NIFTY 24500PE 2024-12-04.jpeg",
                 "NIFTY 24550CE 2024-12-04.jpeg",
                 "NIFTY 24550PE 2024-12-04.jpeg"
+            ],
+            "2024-12-26": [
+                "NIFTY 24400CE 2024-12-04.jpeg",
+                "NIFTY 24400PE 2024-12-04.jpeg",
+                "NIFTY 24450CE 2024-12-04.jpeg",
+                "NIFTY 24450PE 2024-12-04.jpeg",
+                "NIFTY 24500CE 2024-12-04.jpeg",
+                "NIFTY 24500PE 2024-12-04.jpeg",
+                "NIFTY 24550CE 2024-12-04.jpeg",
+                "NIFTY 24550PE 2024-12-04.jpeg"
             ]
         };
 
@@ -254,6 +264,9 @@
             const option = document.createElement('option');
             option.value = date;
             option.textContent = date;
+            if (index === 0) {
+                option.selected = true; // Set the current date as selected
+            }
             folderSelector.appendChild(option);
         });
 
@@ -267,14 +280,32 @@
 
             // Dynamically create img elements
             images.forEach(image => {
+                const imgWrapper = document.createElement('div');
+                imgWrapper.style.display = 'inline-block';
+                imgWrapper.style.margin = '10px';
+                imgWrapper.style.textAlign = 'center';
+                
                 const img = document.createElement('img');
                 img.src = `${baseGitHubURL}${folder}/${image}`;
-                img.alt = `Image from folder ${folder}`;
+                img.alt = image;
                 img.addEventListener('click', () => {
                     modalImage.src = img.src;
                     imageModal.style.display = 'flex';
                 });
-                imageContainer.appendChild(img);
+
+                // Remove the file extension for the caption
+                const imageNameWithoutExtension = image.replace(/\.[^/.]+$/, "");
+
+                const caption = document.createElement('p');
+                caption.textContent = imageNameWithoutExtension;
+                caption.style.fontSize = '14px';
+                caption.style.color = '#333';
+                caption.style.marginTop = '5px';
+
+                imgWrapper.appendChild(img);
+                imgWrapper.appendChild(caption);
+                imageContainer.appendChild(imgWrapper);
+                //imageContainer.appendChild(img);
             });
 
             // If no images found, show a message
@@ -302,7 +333,7 @@
         });
 
         // Load images for the initial folder
-        loadImages(folderSelector.value);
+        loadImages(dates[0]);
     </script>
 
     <footer>
