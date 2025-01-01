@@ -87,10 +87,10 @@ const csvFiles = [
     'Nifty 50 Prediction 2025-01-01.csv',       // Replace with actual file URLs or paths
     'Nifty Auto Prediction 2025-01-01.csv',
     'Nifty Bank Prediction 2025-01-01.csv',
-    'Nifty Fin Services Prediction 2025-01-01.csv',
     'Nifty FMCG Prediction 2025-01-01.csv',
-    'Nifty Infra Prediction 2025-01-01.csv',
+    'Nifty Fin Services Prediction 2025-01-01.csv',
     'Nifty IT Prediction 2025-01-01.csv',
+    'Nifty Infra Prediction 2025-01-01.csv',
     'Nifty Metal Prediction 2025-01-01.csv'
 ];
 
@@ -99,10 +99,10 @@ const tableHeadings = [
     'Nifty 50 Prediction for 2025-01-01',
     'Nifty Auto Prediction for 2025-01-01',
     'Nifty Bank Prediction for 2025-01-01',
-    'Nifty Financial Services Prediction for 2025-01-01',
     'Nifty FMCG Prediction for 2025-01-01',
-    'Nifty Infrastructure Prediction for 2025-01-01',
+    'Nifty Financial Services Prediction for 2025-01-01',
     'Nifty IT Prediction for 2025-01-01',
+    'Nifty Infrastructure Prediction for 2025-01-01',
     'Nifty Metal Prediction for 2025-01-01'
 ];
 
