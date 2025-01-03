@@ -84,30 +84,30 @@
 
 // Array of CSV file URLs
 const csvFiles = [
-    'Nifty 50 Prediction 2025-01-02.csv',       // Replace with actual file URLs or paths
-    'Nifty Auto Prediction 2025-01-02.csv',
-    'Nifty Bank Prediction 2025-01-02.csv',
-    'Nifty FMCG Prediction 2025-01-02.csv',
-    'Nifty Fin Services Prediction 2025-01-02.csv',
-    'Nifty IT Prediction 2025-01-02.csv',
-    'Nifty Infra Prediction 2025-01-02.csv',
-    'Nifty Metal Prediction 2025-01-02.csv'
+    'Nifty 50 Prediction 2025-01-03.csv',       // Replace with actual file URLs or paths
+    'Nifty Auto Prediction 2025-01-03.csv',
+    'Nifty Bank Prediction 2025-01-03.csv',
+    'Nifty FMCG Prediction 2025-01-03.csv',
+    'Nifty Fin Services Prediction 2025-01-03.csv',
+    'Nifty IT Prediction 2025-01-03.csv',
+    'Nifty Infra Prediction 2025-01-03.csv',
+    'Nifty Metal Prediction 2025-01-03.csv'
 ];
 
 // Corresponding table headings for each CSV file
 const tableHeadings = [
-    'Nifty 50 Prediction for 2025-01-02',
-    'Nifty Auto Prediction for 2025-01-02',
-    'Nifty Bank Prediction for 2025-01-02',
-    'Nifty FMCG Prediction for 2025-01-02',
-    'Nifty Financial Services Prediction for 2025-01-02',
-    'Nifty IT Prediction for 2025-01-02',
-    'Nifty Infrastructure Prediction for 2025-01-02',
-    'Nifty Metal Prediction for 2025-01-02'
+    'Nifty 50 Prediction for 2025-01-03',
+    'Nifty Auto Prediction for 2025-01-03',
+    'Nifty Bank Prediction for 2025-01-03',
+    'Nifty FMCG Prediction for 2025-01-03',
+    'Nifty Financial Services Prediction for 2025-01-03',
+    'Nifty IT Prediction for 2025-01-03',
+    'Nifty Infrastructure Prediction for 2025-01-03',
+    'Nifty Metal Prediction for 2025-01-03'
 ];
 
 // Folder path where CSV files are stored
-const folderPath = './2025-01-02/'; // Update the folder path if necessary
+const folderPath = './2025-01-03/'; // Update the folder path if necessary
 
 // Fetch and render each CSV file
 csvFiles.forEach((csvFile, index) => {
