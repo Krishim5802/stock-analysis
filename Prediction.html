@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Analysis</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        table {
-           width: 50%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            align-items: center;
-            flex-direction: column;
-            margin-left: 25%;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        td:first-child {
-        text-align: left; /* Aligns the first column (Company Name) to the left */
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        h1.stock-table {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            top: 60%;
-            width: 100%;
-            left: 50%;
-            align-items: center;
-            margin-left: 33%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pred</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+#tableContainer {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.main-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.main-table th {
+    background-color: #f2f2f2;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.main-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* td:first-child {
+  text-align: left; /* Aligns the first column (Name) to the left */
+
+
+  </style>
 </head>
 <body>
     <header>
+        <!-- <div class="logo">Your Logo</div> -->
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -67,13 +78,16 @@
             </li>
             <li><a href="Blogs.html">Blogs</a></li>
             <li><a href="Prediction.html">Prediction</a></li>
+            <li><a href="pred.html">pred</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
       </header>
-<!--     <h1 class="stock-table">Prediction for 01-Jan-2025</h1> -->
-    <!-- <input type="file" id="csvFileInput" accept=".csv"> -->
-    <table id="csvTable"></table>
-    <script src="script.js"></script>
+      <div id="tableContainer"></div>
+      <script src="updatedScript.js"></script>
+      
+  <footer>
+    <!-- <p>© 2024 GPT. All rights reserved.</p> -->
+  </footer>
 </body>
 </html>
