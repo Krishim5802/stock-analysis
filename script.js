@@ -90,7 +90,7 @@ function displayDataInCell(index, data) {
                 cellElement.textContent = cellData;
 
                 // Apply color coding for predictions
-                if (rowIndex > 0 && cellIndex === 1) { // Assuming the prediction column is the second column
+                if (rowIndex > 0 && cellIndex === 2) { // Assuming the prediction column is the second column
                     if (cellData.toLowerCase() === 'up') {
                         cellElement.style.color = 'green';
                     } else if (cellData.toLowerCase() === 'down') {
