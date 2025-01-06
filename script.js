@@ -1,17 +1,17 @@
 // Table names and corresponding CSV files
 const tableData = [
-    { name: "Nifty 50", file: "Nifty 50 Prediction 2025-01-03.csv" },
-    { name: "Nifty IT", file: "Nifty IT Prediction 2025-01-03.csv" },
-    { name: "Nifty Auto", file: "Nifty Auto Prediction 2025-01-03.csv" },
-    { name: "Nifty Fin", file: "Nifty Fin Services Prediction 2025-01-03.csv" },
-    { name: "Nifty FMCG", file: "Nifty FMCG Prediction 2025-01-03.csv" },
-    { name: "Nifty Metal", file: "Nifty Metal Prediction 2025-01-03.csv" },
-    { name: "Nifty Bank", file: "Nifty Bank Prediction 2025-01-03.csv" },
-    { name: "Nifty Infra", file: "Nifty Infra Prediction 2025-01-03.csv" }
+    { name: "", file: "Nifty 50 Prediction 2025-01-06.csv" },
+    { name: "", file: "Nifty IT Prediction 2025-01-06.csv" },
+    { name: "", file: "Nifty Auto Prediction 2025-01-06.csv" },
+    { name: "", file: "Nifty Fin Services Prediction 2025-01-06.csv" },
+    { name: "", file: "Nifty FMCG Prediction 2025-01-06.csv" },
+    { name: "", file: "Nifty Metal Prediction 2025-01-06.csv" },
+    { name: "", file: "Nifty Bank Prediction 2025-01-06.csv" },
+    { name: "", file: "Nifty Infra Prediction 2025-01-06.csv" }
 ];
 
 // Folder path for CSV files
-const folderPath = './2025-01-03/';
+const folderPath = './2025-01-06/';
 
 // Function to render the table layout
 function renderTableLayout() {
@@ -24,17 +24,17 @@ function renderTableLayout() {
     // Add table header
     const headerRow = document.createElement('tr');
     const header = document.createElement('th');
-    header.setAttribute('colspan', 3); // Span across 3 columns
-    header.textContent = "Predictions for 03-Jan-25";
+    header.setAttribute('colspan', 4); // Span across 3 columns
+    header.textContent = "Predictions for 06-Jan-25";
     header.style.textAlign = "center";
     headerRow.appendChild(header);
     table.appendChild(headerRow);
 
     // Add rows and columns based on tableData
-    for (let i = 0; i < tableData.length; i += 3) {
+    for (let i = 0; i < tableData.length; i += 4) {
         const row = document.createElement('tr');
 
-        for (let j = i; j < i + 3; j++) {
+        for (let j = i; j < i + 4; j++) {
             const cell = document.createElement('td');
             if (j < tableData.length) {
                 cell.textContent = tableData[j].name;
@@ -90,7 +90,7 @@ function displayDataInCell(index, data) {
                 cellElement.textContent = cellData;
 
                 // Apply color coding for predictions
-                if (rowIndex > 0 && cellIndex === 2) { // Assuming the prediction column is the second column
+                if (rowIndex > 0 && cellIndex === 1) { // Assuming the prediction column is the second column
                     if (cellData.toLowerCase() === 'up') {
                         cellElement.style.color = 'green';
                     } else if (cellData.toLowerCase() === 'down') {
