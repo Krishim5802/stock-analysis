@@ -25,7 +25,7 @@ function renderTableLayout() {
     const headerRow = document.createElement('tr');
     const header = document.createElement('th');
     header.setAttribute('colspan', 4); // Span across 4 columns
-    header.textContent = "Predictions for 21-Jan-25";
+    header.textContent = "Predictions for 24-Jan-25";
     header.style.textAlign = "center";
     headerRow.appendChild(header);
     table.appendChild(headerRow);
