@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,41 +8,44 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+    
             text-align: center;
         }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-
-        .image-item {
-            margin: 10px;
-            text-align: center;
-        }
-
         img {
             width: 150px;
             height: 150px;
-            margin-bottom: 5px;
+            margin: 10px;
             cursor: pointer;
             transition: transform 0.2s;
         }
-
-        img:hover {
+        /* img:hover {
             transform: scale(1.1);
+        } */
+   
+          .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }  
+   
+         .header h1 {
+            margin: 0 auto;
+            text-align: center;
+            
+            flex-grow: 1;
+            
         }
-
-        .caption {
-            font-size: 14px;
-            color: #333;
+        h1.indian-market {
+            margin: 0;
+            margin-left: 30%;
+            text-align: center;
         }
-
-        h1 {
-            margin: 20px 0;
-        }
+        .header select {
+            margin: 0;
+             margin-right: 16%; 
+        } 
 
         #image-modal {
             display: none;
@@ -57,14 +59,17 @@
             align-items: center;
             z-index: 1000;
         }
-
-        #image-modal img {
+        /* #image-modal img {
             max-width: 90%;
             max-height: 90%;
-            width: 70%;
-            height: 90%;
-            border: 2px solid white;
-            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+        } */
+        #image-modal img {
+            max-width: 90%; /* Adjust as needed */
+            max-height: 90%; /* Adjust as needed */
+            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid white; /* Optional for a cleaner look */
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7); /* Optional for visual enhancement */
         }
 
         #image-modal span {
@@ -76,15 +81,9 @@
             font-weight: bold;
             cursor: pointer;
         }
-
-        #image-modal span:hover {
-            color: #f0f0f0;
-            transform: scale(1.2);
-            transition: transform 0.2s ease-in-out;
-        }
     </style>
+    
 </head>
-
 <body>
     <header>
         <nav>
@@ -114,46 +113,19 @@
                 </li>
                 <li><a href="Blogs.html">Blogs</a></li>
                 <li><a href="Prediction.html">Prediction</a></li>
+                <li><a href="pred.html">Prediction</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>Images of 17 Jan</h1>
-    <div class="image-container">
-        <div class="image-item">
-            <img src="https://raw.githubusercontent.com/Hemangini08/Images/main/Indian-Markets/Patterns/2025-01-17/GODREJCP_HA_UP.jpeg" alt="GODREJCP">
-            <div class="caption">GODREJCP</div>
-        </div>
-        <div class="image-item">
-            <img src="https://raw.githubusercontent.com/Hemangini08/Images/main/Indian-Markets/Patterns/2025-01-17/HINDALCO_ST_UP.jpeg" alt="HINDALCO">
-            <div class="caption">HINDALCO</div>
-        </div>
-        <div class="image-item">
-            <img src="https://raw.githubusercontent.com/Hemangini08/Images/main/Indian-Markets/Patterns/2025-01-17/NIFTY IT_HA_DOWN.jpeg" alt="NIFTY IT">
-            <div class="caption">NIFTY IT</div>
-        </div>
-        <div class="image-item">
-            <img src="https://raw.githubusercontent.com/Hemangini08/Images/main/Indian-Markets/Patterns/2025-01-17/PERSISTENT_HA_DOWN.jpeg" alt="PERSISTENT">
-            <div class="caption">PERSISTENT</div>
-        </div>
-        <div class="image-item">
-            <img src="https://raw.githubusercontent.com/Hemangini08/Images/main/Indian-Markets/Patterns/2025-01-17/TCS_HA_DOWN.jpeg" alt="TCS">
-            <div class="caption">TCS</div>
-        </div>
+    <div class="header">
+        <h1 class="indian-market">Indian Markets - Breakouts<h1>
+        <select id="folder-selector">
+        <option value="">Select a date</option>
+        </select>
     </div>
-
-    <h1>Images of 16 Jan</h1>
-    <div class="image-container">
-        <div class="image-item">
-            <img src="https://raw.githubusercontent.com/Hemangini08/Images/main/Indian-Markets/Patterns/2025-01-16/COFORGE_HA_UP.jpeg" alt="COFORGE">
-            <div class="caption">COFORGE</div>
-        </div>
-        <div class="image-item">
-            <img src="https://raw.githubusercontent.com/Hemangini08/Images/main/Indian-Markets/Patterns/2025-01-16/ONGC_HA_UP.jpeg" alt="ONGC">
-            <div class="caption">ONGC</div>
-        </div>
-    </div>
+    <div id="image-container"></div>
 
     <div id="image-modal">
         <span id="close-modal">&times;</span>
@@ -161,35 +133,120 @@
     </div>
 
     <script>
-        const images = document.querySelectorAll('.image-container img');
+        const folderSelector = document.getElementById('folder-selector');
+        const imageContainer = document.getElementById('image-container');
         const imageModal = document.getElementById('image-modal');
         const modalImage = document.getElementById('modal-image');
         const closeModal = document.getElementById('close-modal');
 
-        // Add event listener to each image
-        images.forEach(img => {
-            img.addEventListener('click', () => {
-                modalImage.src = img.src;
-                imageModal.style.display = 'flex';
-            });
+        // Base GitHub URL
+        const baseGitHubURL = "https://raw.githubusercontent.com/Hemangini08/Images/main/Indian-Markets/Breakouts/";
+
+        // Images for each folder
+        const imagesByFolder = {
+            "2024-12-16": [
+                "NIFTY 23800PE 2024-12-02.jpeg",
+                "NIFTY 23850CE 2024-12-02.jpeg",
+                "NIFTY 23850PE 2024-12-02.jpeg",
+                "NIFTY 23900CE 2024-12-02.jpeg",
+                "NIFTY 23900PE 2024-12-02.jpeg",
+                "NIFTY 23950CE 2024-12-02.jpeg",
+                "NIFTY 23950PE 2024-12-02.jpeg",
+                "NIFTY 24000CE 2024-12-02.jpeg"
+            ],
+            "2024-12-17": [
+                "NIFTY 24200CE 2024-12-03 Temp 1.jpeg",
+                "NIFTY 24200CE 2024-12-03 Temp 2.jpeg",
+                "NIFTY 24200CE 2024-12-03 Temp 3.jpeg",
+                "NIFTY 24450PE 2024-12-03 Temp 1.jpeg",
+                "NIFTY 24450PE 2024-12-03 Temp 2.jpeg",
+               // "NIFTY 24450PE 2024-12-02 Temp 3.jpeg",
+                "NIFTY 24500PE 2024-12-03 Temp 1.jpeg",
+                "NIFTY 24500PE 2024-12-03 Temp 2.jpeg"
+            ],
+            "2024-12-18": [
+                "NIFTY 24400CE 2024-12-04.jpeg",
+                "NIFTY 24400PE 2024-12-04.jpeg",
+                "NIFTY 24450CE 2024-12-04.jpeg",
+                "NIFTY 24450PE 2024-12-04.jpeg",
+                "NIFTY 24500CE 2024-12-04.jpeg",
+                "NIFTY 24500PE 2024-12-04.jpeg",
+                "NIFTY 24550CE 2024-12-04.jpeg",
+                "NIFTY 24550PE 2024-12-04.jpeg"
+            ]
+        };
+
+        // Function to calculate current and previous three dates
+
+        function getDates() {
+            const dates = [];
+            for (let i = 0; i < 4; i++) {
+                const date = new Date();
+                date.setDate(date.getDate() - i);
+                dates.push(date.toISOString().split('T')[0]);
+            }
+            return dates;
+        }
+
+        // Dynamically populate the select options
+        const dates = getDates();
+        dates.forEach(date => {
+            const option = document.createElement('option');
+            option.value = date;
+            option.textContent = date;
+            folderSelector.appendChild(option);
         });
 
-        // Close modal when clicking the "X" button
+        // Function to load images for the selected folder
+        function loadImages(folder) {
+            // Clear the container first
+            imageContainer.innerHTML = "";
+
+            // Get the images for the selected folder
+            const images = imagesByFolder[folder] || [];
+
+            // Dynamically create img elements
+            images.forEach(image => {
+                const img = document.createElement('img');
+                img.src = `${baseGitHubURL}${folder}/${image}`;
+                img.alt = `Image from folder ${folder}`;
+                img.addEventListener('click', () => {
+                    modalImage.src = img.src;
+                    imageModal.style.display = 'flex';
+                });
+                imageContainer.appendChild(img);
+            });
+
+            // If no images found, show a message
+            if (images.length === 0) {
+                imageContainer.innerHTML = `<p>No images found for folder ${folder}.</p>`;
+            }
+        }
+
+        // Event listener for folder selection
+        folderSelector.addEventListener('change', (event) => {
+            const selectedFolder = event.target.value;
+            loadImages(selectedFolder);
+        });
+
+        // Close modal on click
         closeModal.addEventListener('click', () => {
             imageModal.style.display = 'none';
         });
 
-        // Close modal when clicking outside the image
+        // Close modal on outside click
         imageModal.addEventListener('click', (event) => {
             if (event.target === imageModal) {
                 imageModal.style.display = 'none';
             }
         });
+
+        // Load images for the initial folder
+        loadImages(folderSelector.value);
     </script>
 
     <footer>
-        <!-- Footer content -->
+        <!-- <p>© 2024 GPT. All rights reserved.</p> -->
     </footer>
 </body>
-
 </html>
